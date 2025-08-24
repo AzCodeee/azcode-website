@@ -24,6 +24,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
 
 </head>
 
@@ -92,7 +94,7 @@
                         </div>
 
                         <h1 class="text-huge-title">
-                            We are AzCode Luther, <br>
+                            We are AzCode, <br>
                             a frontend developer <br>
                             & backend <br>
                             developer based <br>
@@ -100,12 +102,13 @@
                         </h1>
                     </div>
 
-                    <ul class="intro-social">
-                        <li><a href="#0">Behance</a></li>
-                        <li><a href="#0">Twitter</a></li>
-                        <li><a href="#0">Dribbble</a></li>
-                        <li><a href="https://www.instagram.com/code.az/">Instagram</a></li>
-                    </ul>
+                   <ul class="intro-social">                   
+  		     <li>
+        		<a href="https://www.instagram.com/code.az/" target="_blank" rel="noopener noreferrer" 					style="font-size:22px; font-weight:bold;">
+            			 <i class="bi bi-instagram"></i>Instagram
+        		</a>
+    		     </li>
+		   </ul>
 
                 </div> <!-- end intro content -->
 
@@ -123,10 +126,13 @@
 
                 <div class="row about-info wide" data-animate-block>
 
-                    <div class="column lg-6 md-12 about-info__pic-block">
-                        <img src="images/about-photo.jpg" 
-                             srcset="images/about-photo.jpg 1x, images/about-photo@2x.jpg 2x" alt="" class="about-info__pic" data-animate-el>
-                    </div>
+                   <div class="column lg-6 md-12 about-info__pic-block">
+    <img src="images/azcode.jpg" 
+         srcset="images/azcode.jpg 1x, images/azcode@2x.jpg 2x" 
+         alt="AZcode Team Photo" 
+         class="about-info__pic" 
+         data-animate-el>
+</div>
 
                     <div class="column lg-6 md-12">
                         <div class="about-info__text" >
@@ -135,7 +141,10 @@
                                 About
                             </h2>
                             <p class="attention-getter" data-animate-el>
-                               MY NAME IS SIM KANG CHENG.
+                               🌐 About Us – 
+
+At AZcode, we specialize in delivering custom programming solutions for both students and businesses. Whether you need assistance with academic assignments or professional-grade software for your organization, our goal is to provide reliable, innovative, and tailored solutions that help you succeed.
+
                             </p>
                             <a href="#0" class="btn btn--medium u-fullwidth" data-animate-el>Download CV</a>
 
@@ -651,5 +660,37 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
+
 </body>
 </html>
+
+<style>
+.about-info__text {
+    margin-left: 30px;   /* pushes text to the right */
+    position: relative;  /* makes sure it doesn’t overlap */
+    z-index: 1;          /* keeps text above the image if they overlap */
+} 
+
+@media (max-width: 768px) {
+    .about-info__text {
+        margin-left: 0;  /* remove spacing on small screens */
+        margin-top: 20px; /* add a little gap below the image */
+    }
+}
+
+
+.intro-social a {
+    font-size: 20px;        /* make text bigger */
+    font-weight: bold;
+    display: flex;          /* icon + text side by side */
+    align-items: center;    /* align vertically in the middle */
+    gap: 8px;               /* space between icon and text */
+}
+
+
+.intro-social i {
+    font-size: 22px;        /* make icon slightly bigger */
+}
+
+
+</style>
